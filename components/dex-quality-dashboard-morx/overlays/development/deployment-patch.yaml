@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dex-quality-dashboard-morx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-kbdh-tenant/mc-quality-dashboard/dex-quality-dashboard-morx@sha256:99c95feb28103eb8f21737b18cc97309d88c11555f85e1ba8de42cceef6f625e
+        name: dex
+        resources: {}
+status: {}
